@@ -1,0 +1,9 @@
+Analyzing 'G|GATCC' cut site in DNA sequence from bioinformatics_project/data/random_sequence.fasta file:
+Total cut sites found: 236
+Cut site pairs 80-120 kbp apart: 1942
+First 5 pairs:
+1. 330 - 90117
+2. 330 - 92549
+3. 330 - 103194
+4. 330 - 108251
+5. 330 - 108779
