@@ -33,7 +33,7 @@ def main(FASTA_path, cutsite):
     # Find pairs of cut sites which are 80-120 kbp apart
     all_pairs_list = []
     for i in range(len(cut_index_list)):
-        for j in range(i + 1, len(cut_index_list)): # For each cut site, loop over all subsequent cut sites within 80-120 kbs 
+        for j in range(i + 1, len(cut_index_list)): # For each cut site, loop over all subsequent to find cut sites within 80-120 kbs 
             if 80000 <= cut_index_list[j] - cut_index_list[i] <= 120000:
                 all_pairs_list.append([cut_index_list[i], cut_index_list[j]]) # Append a pair list to list of all pairs
 
@@ -67,7 +67,7 @@ def main(FASTA_path, cutsite):
 if __name__=="__main__":
     # Command-line argument parsing
     parse = argparse.ArgumentParser()
-    parse.add_argument('FASTA_path', help = 'FASTA file paththat contains the DNA strand')
+    parse.add_argument('FASTA_path', help = 'FASTA file path that contains the DNA strand')
     parse.add_argument('cutsite', help = 'Reference sequence of the cutting sites')
 
     # Parse and pass the arguments to the main function
